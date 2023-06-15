@@ -1,6 +1,6 @@
 @media only screen and (max-width: 767px) {
   .info-img {
-    display: none;
+    display: none; /*Ẩn ảnh avatar*/
   }
   #nav-bar {
     text-align: start;
@@ -12,12 +12,15 @@
   nav a {
     text-align: start;
   }
+
+  /*Chuyển navbar thành cột*/
   .navbar-items {
     flex-direction: column;
     text-align: start;
     border: none;
   }
 
+  /*vẽ lại border cho tab chứng chỉ, vì nó chuyển thành cột nên tạo border ở top cho hàng sau (kẻ giữa 2 hàng)*/
   .cer-content1 {
     padding-bottom: 30px;
   }
