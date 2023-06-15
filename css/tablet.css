@@ -1,0 +1,11 @@
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .info-img {
+    display: none;
+  }
+  .avatar {
+    width: 50px;
+  }
+  .info-img {
+    display: none;
+  }
+}

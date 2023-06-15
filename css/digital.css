@@ -1,0 +1,113 @@
+body::before {
+  display: block;
+  content: "";
+  height: 60px;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  /* box-sizing: border-box; */
+}
+.project_1,
+.project_2,
+.project_3 {
+  display: none;
+}
+
+.tilte-project {
+  color: #de5c9d;
+}
+
+.img-projects {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.digital-cv {
+  background-color: #f0f8ff;
+}
+
+.title-cv {
+  color: blue;
+  border-bottom: 1px solid grey;
+}
+.icon-timeline {
+  display: flex;
+  color: white;
+  background-color: #9e88ff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  justify-content: center;
+  align-items: center;
+}
+.digital-content > div {
+  font-size: 15px;
+}
+.content {
+  border-bottom: 2px dotted lightblue;
+}
+.digital-cv {
+  border: 20px solid blue;
+}
+.border-cv {
+  border-right: 15px solid blue;
+}
+.border-cv1 {
+  border-bottom: 15px solid blue;
+}
+
+.border-cv1 {
+  height: 60%;
+}
+
+.submit a {
+  text-decoration: none;
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .digital-icon {
+    text-align: center;
+  }
+  .border-cv {
+    border-right: none;
+    border-bottom: 15px solid blue;
+  }
+  .border-cv {
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .digital-icon {
+    text-align: center;
+  }
+  .border-cv {
+    border-right: none;
+    border-bottom: 15px solid blue;
+  }
+  .border-cv {
+    height: 100%;
+  }
+}

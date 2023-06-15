@@ -1,0 +1,35 @@
+@media only screen and (max-width: 767px) {
+  .info-img {
+    display: none;
+  }
+  .info-img {
+    display: none;
+  }
+  #nav-bar {
+    text-align: start;
+  }
+  #nav-bar ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  nav a {
+    text-align: start;
+  }
+  .navbar-items {
+    flex-direction: column;
+    text-align: start;
+    border: none;
+  }
+
+  .cer-content1 {
+    padding-bottom: 30px;
+  }
+  .cer-content2 {
+    padding-top: 50px;
+    border-left: none;
+    border-top: 2px solid #d6c08d;
+  }
+  .pro-info {
+    padding-top: 20px;
+  }
+}
