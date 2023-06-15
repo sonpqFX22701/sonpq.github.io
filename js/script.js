@@ -57,11 +57,14 @@ function handleViewMore(element) {
   const parrentEl = element.closest(".parent");
   const content = parrentEl.querySelector(".content-details");
   const textview = element.textContent.toLocaleLowerCase().trim();
+  console.log(parrentEl);
   if (textview === "view more") {
     content.classList.remove("hidden");
     element.textContent = "View Less";
+    parrentEl.classList.remove("card_start"); //mục đích để cân chỉnh các card mở rộng từ "kinh nghiệm => kỹ năng" thì card đều nhau: flex align-self về stretch
   } else {
     content.classList.add("hidden");
     element.textContent = "View More";
+    parrentEl.classList.add("card_start"); //Khi thu nhỏ thì không cho card bằng với card mở rộng => chuyển flex align-self về start
   }
 }

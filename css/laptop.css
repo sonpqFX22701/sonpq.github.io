@@ -220,7 +220,7 @@ nav a:link {
 
 /*Kinh nghiệm-Kỹ năng*/
 .card {
-  align-self: start;
+  /* align-self: start; */
   border: 1px solid #d0d0d0;
   border-radius: 5px;
   transition: 0.5s;
@@ -228,6 +228,10 @@ nav a:link {
 }
 .card:hover {
   box-shadow: 0 0 5px 2px #d0d0d0;
+}
+
+.card_start {
+  align-self: start; /*Mục đích khi thu nhỏ card thì căn ở đầu, khi mở rộng view more thì các card bằng nhau*/
 }
 
 .timeline > li {
