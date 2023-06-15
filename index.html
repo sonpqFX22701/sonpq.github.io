@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Bootstrap Core CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!--Bootstrap iCON-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/laptop.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <title>CV Pham Quang Son</title>
+  </head>
+  <body>
+    <div id="banner">
+      <!-- <div class="overlay"></div> -->
+      <img src="images/banner.jpg" alt="banner" class="banner-img" />
+      <div class="centered">
+        <h1>Phạm Quang Sơn</h1>
+        <span>Sofware Engineer - Data Analyze</span>
+      </div>
+    </div>
+
+    <!--Nav bar-->
+    <section id="nav-bar">
+      <nav class="navbar-items">
+        <a class="navbar-item" href="#about">
+          <i class="icon icon-user"></i>Thông tin</a
+        >
+        <a class="navbar-item" href="#job-info"
+          ><i class="icon icon-doc-text-inv"></i> Lý lịch</a
+        >
+        <div class="avatar">
+          <div class="info-img">
+            <img
+              class="img"
+              src="./images/chandung.jpg"
+              alt="personal-image"
+              height="200"
+              width="200"
+            />
+          </div>
+        </div>
+        <a class="navbar-item" href="#certificate"
+          ><i class="icon icon-mail-alt"></i> Chứng chỉ</a
+        >
+        <a class="navbar-item" href="#project"
+          ><i class="icon icon-star-1"></i> Dự Án</a
+        >
+      </nav>
+    </section>
+    <!--Thông tin cá nhân và mục tiêu-->
+    <section id="about" class="bg-grey">
+      <div class="container-fluid">
+        <div class="row">
+          <div id="target" class="col-md-6 p-5">
+            <h1 class="section-title mt-40">Mục tiêu nghề nghiệp</h1>
+            <p>
+              Là một sinh viên đã hoàn thành chương trình Software Enginner của
+              FUNiX. Tôi mong muốn mình sẽ chuyển đổi ngành nghề hiện tại đang
+              làm và đi làm việc với vị trí <b>Data Analyze</b>, và hoàn thành
+              tiếp chương trình chuyển đổi để nhận bằng 2 Đại học FPT.
+            </p>
+          </div>
+          <div id="personal-info" class="col-md-6 p-5">
+            <h1 class="section-title mt-40">Thông tin cá nhân</h1>
+            <div class="info hidden">
+              <ul>
+                <li><span>Giới tính</span> : Nam</li>
+                <li><span>Ngày sinh</span> : 04/10/1987</li>
+                <li><span>Điện thoại</span> : (+84) 968889xxx</li>
+                <li><span>Email</span> : sonpqFX22701@funix.edu.vn</li>
+                <li><span>Địa chỉ</span> : Đà Nẵng, Việt Nam</li>
+                <li>
+                  <a href="#" style="color: #918e8e"
+                    >Website : https://abc.tech</a
+                  >
+                </li>
+              </ul>
+              <div class="py-3 ps-4 social-icon icon">
+                <a href="#" target="_blank"><i class="icon-twitter"></i></a>
+                <a href="#" target="_blank"><i class="icon-facebook"></i></a>
+                <a href="#" target="_blank"><i class="icon-gplus"></i></a>
+                <a href="#" target="_blank"><i class="icon-linkedin"></i></a>
+              </div>
+
+              <button class="btn btn-primary close-modal">Show less</button>
+            </div>
+            <!--Tạo button để hiện thông tin-->
+            <div class="email-form mb-3">
+              <div>
+                <input
+                  type="email"
+                  class="form-control mb-2"
+                  id="email"
+                  placeholder="name@example.com"
+                />
+                <label for="email" class="alert-label mb-2">
+                  Hãy nhập email để xác thực
+                </label>
+              </div>
+              <button type="button" class="btn btn-primary email-submit">
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- phần từ kinh nghiệm - kỹ năng -->
+    <section id="job-info">
+      <div class="container my-4">
+        <div class="row g-4">
+          <!-- hàng 1 chứa kinh nghiệm, học vấn, hoạt động -->
+          <div class="col-md col-lg-12">
+            <div class="row g-4">
+              <!-- kinh nghiệm -->
+              <div class="col-lg-4 col-md-12 d-flex">
+                <div
+                  class="card p-3 flex-fill parent"
+                  onmouseover="handleOnMouseOver(this)"
+                  onmouseout="handleOnMouseOut(this)"
+                >
+                  <div class="row">
+                    <div class="col-9"><h2>Kinh nghiệm</h2></div>
+                    <div class="col-3">
+                      <i class="icon fs-1 ic-toolbox"></i>
+                    </div>
+                  </div>
+                  <div class="col-12 p-3 content-details hidden">
+                    <ul class="timeline">
+                      <li>
+                        <p><strong>Data Analyze - Công ty Y</strong></p>
+                        <p>
+                          <em>05/2022 - <span class="now">Hiện tại</span></em>
+                        </p>
+                        <p>- Phân tích dữ liệu kinh doanh.</p>
+                        <p>
+                          - Phân tích giá cả sản phẩm để đưa ra mức giá phù
+                          hợp...
+                        </p>
+                        <p>
+                          - Lập cáo báo cáo, biểu diễn số liệu trên dashboard.
+                        </p>
+                        <p>
+                          - Sử dụng ngôn ngữ serverside (Python, Java, …) để xây
+                          dựng các Web Server. Hiển thị các báo cáo.
+                        </p>
+                      </li>
+
+                      <li>
+                        <p>
+                          <strong>Trưởng phòng Di động - Công ty X</strong>
+                        </p>
+                        <p><em>01/2019-04/2022</em></p>
+                        <p>- Quy hoạch định cỡ mạng Vô tuyến 2G, 3G và 4G.</p>
+                        <p>
+                          - Giám sát, kiểm soát chất lượng mạng Vô tuyến 2G, 3G
+                          và 4G.
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="control-view">
+                    <button
+                      class="btn btn-warning viewMore hidden"
+                      type="button"
+                      onclick="handleViewMore(this)"
+                    >
+                      View more
+                    </button>
+                    <!--Tạo 1 button ẩn Không có mục đích gì, chỉ tạo để tránh trường hợp bị thu nhỏ card khi ẩn viewmore button-->
+                    <button class="viewLess"></button>
+                  </div>
+                </div>
+              </div>
+
+              <!--Học vấn-->
+              <div class="col-lg-4 col-md-12 d-flex">
+                <div
+                  class="card p-3 flex-fill parent"
+                  onmouseover="handleOnMouseOver(this)"
+                  onmouseout="handleOnMouseOut(this)"
+                >
+                  <div class="row">
+                    <div class="col-9"><h2>Học vấn</h2></div>
+                    <div class="col-3">
+                      <i class="icon fs-1 ic-pencil"></i>
+                    </div>
+                  </div>
+                  <div class="col-12 p-3 content-details hidden">
+                    <ul class="timeline">
+                      <li>
+                        <p><strong>Cử nhân - Đại học FPT</strong></p>
+                        <p><em>06/2022 - 05/2023</em></p>
+                        <p>- Chuyên ngành: Kỹ thuật phần mềm.</p>
+                        <p>- GPA: 9 / 10</p>
+                      </li>
+                      <li>
+                        <p><strong>FUNIX</strong></p>
+                        <p><em>04/2021 - 05/2022</em></p>
+                        <p>- Chương trình Sofware Enginner.</p>
+                        <p>- GPA: 9 / 10</p>
+                      </li>
+                      <li>
+                        <p><strong>Đại học Bách khoa Đà Nẵng</strong></p>
+                        <p>
+                          <em>09/2005 - 05/2010</em>
+                        </p>
+                        <p>- Kỹ sư Đại học Bách khoa Đà Nẵng</p>
+                        <p>- Chuyên ngành: Điện tử Viễn thông.</p>
+                        <p>- GPA: 7.8 / 10</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="control-view">
+                    <button
+                      class="btn btn-warning viewMore hidden"
+                      type="button"
+                      onclick="handleViewMore(this)"
+                    >
+                      View more
+                    </button>
+
+                    <button class="viewLess"></button
+                    ><!--Tạo 1 button ẩn Không có mục đích gì, chỉ tạo để tránh trường hợp bị thu nhỏ card khi ẩn viewmore button-->
+                  </div>
+                </div>
+              </div>
+
+              <!--Hoạt động-->
+              <div class="col-lg-4 col-md-12 d-flex">
+                <div
+                  class="card p-3 flex-fill parent"
+                  onmouseover="handleOnMouseOver(this)"
+                  onmouseout="handleOnMouseOut(this)"
+                >
+                  <div class="row">
+                    <div class="col-9"><h2>Hoạt động</h2></div>
+                    <div class="col-3">
+                      <i class="icon fs-1 ic-toolbox"></i>
+                    </div>
+                  </div>
+                  <div class="col-12 p-3 content-details hidden">
+                    <ul class="timeline">
+                      <li>
+                        <p><strong>Nghiên cứu khoa học</strong></p>
+                        <p><em>10/2009</em></p>
+                        <p>- Sinh viên nghiên cứu khoa học năm 2009</p>
+                        <p>- Giải khuyến khích</p>
+                        <p>
+                          - Đề tài: Ứng dụng hệ thống nhúng trong quản lý và
+                          giám sát thiêt bị.
+                        </p>
+                      </li>
+                      <li>
+                        <p><strong>Robocon 2008</strong></p>
+                        <p><em>08/2008-10/2008</em></p>
+                        <p>- Robocon 2008.</p>
+                        <p>
+                          - Thành viên trong đội robocon khoa Điện tử Viễn thông
+                          năm 2008
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="control-view">
+                    <button
+                      class="btn btn-warning viewMore hidden"
+                      type="button"
+                      onclick="handleViewMore(this)"
+                    >
+                      View more
+                    </button>
+                    <!--Tạo 1 button ẩn Không có mục đích gì, chỉ tạo để tránh trường hợp bị thu nhỏ card khi ẩn viewmore button-->
+                    <button class="viewLess"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Hàng 2-->
+          <div class="col-md col-lg-12">
+            <div class="row g-4">
+              <!--Sở thích-->
+              <div class="col-lg-4 col-md-12 d-flex">
+                <div
+                  class="card p-3 flex-fill parent"
+                  onmouseover="handleOnMouseOver(this)"
+                  onmouseout="handleOnMouseOut(this)"
+                >
+                  <div class="row">
+                    <div class="col-9"><h2>Sở thích</h2></div>
+                    <div class="col-3">
+                      <i class="icon fs-1 ic-telescope"></i>
+                    </div>
+                  </div>
+                  <div class="col-12 p-3 content-details hidden">
+                    <div class="habit-txt">
+                      <i class="ic-megaphone icon"></i>
+                      <p>Âm nhạc</p>
+                    </div>
+                    <div class="habit-txt">
+                      <i class="ic-camera icon"></i>
+                      <p>Chụp ảnh</p>
+                    </div>
+                    <div class="habit-txt">
+                      <i class="ic-hotairballoon icon"></i>
+                      <p>Du lịch</p>
+                    </div>
+                    <div class="habit-txt">
+                      <i class="ic-basket icon"></i>
+                      <p>Coding</p>
+                    </div>
+                  </div>
+                  <div class="control-view">
+                    <button
+                      class="btn btn-warning viewMore hidden"
+                      type="button"
+                      onclick="handleViewMore(this)"
+                    >
+                      View more
+                    </button>
+                    <!--Tạo 1 button ẩn Không có mục đích gì, chỉ tạo để tránh trường hợp bị thu nhỏ card khi ẩn viewmore button-->
+                    <button class="viewLess"></button>
+                  </div>
+                </div>
+              </div>
+
+              <!--Ngông ngũ-->
+              <div class="col-lg-4 col-md-12 d-flex">
+                <div
+                  class="card p-3 flex-fill parent"
+                  onmouseover="handleOnMouseOver(this)"
+                  onmouseout="handleOnMouseOut(this)"
+                >
+                  <div class="row">
+                    <div class="col-9"><h2>Ngôn ngữ</h2></div>
+                    <div class="col-3">
+                      <i class="icon fs-1 ic-mic"></i>
+                    </div>
+                  </div>
+                  <div class="col-12 p-3 content-details hidden">
+                    <div>
+                      <p><strong>English-Toiec 750</strong></p>
+                      <p>
+                        <span class="range"></span>
+                        <span class="range"></span>
+                        <span
+                          class="range"
+                          style="background-color: gray"
+                        ></span>
+                      </p>
+                    </div>
+                    <div>
+                      <p><strong>Portuguese - Basic</strong></p>
+                      <span class="range"></span>
+                      <span class="range" style="background-color: gray"></span>
+                      <span class="range" style="background-color: gray"></span>
+                    </div>
+                  </div>
+                  <div class="control-view">
+                    <button
+                      class="btn btn-warning viewMore hidden"
+                      type="button"
+                      onclick="handleViewMore(this)"
+                    >
+                      View more
+                    </button>
+                    <!--Tạo 1 button ẩn Không có mục đích gì, chỉ tạo để tránh trường hợp bị thu nhỏ card khi ẩn viewmore button-->
+                    <button class="viewLess"></button>
+                  </div>
+                </div>
+              </div>
+
+              <!--Kỹ năng-->
+              <div class="col-lg-4 col-md-12 d-flex">
+                <div
+                  class="card p-3 flex-fill parent"
+                  onmouseover="handleOnMouseOver(this)"
+                  onmouseout="handleOnMouseOut(this)"
+                >
+                  <div class="row">
+                    <div class="col-9"><h2>Kỹ năng</h2></div>
+                    <div class="col-3">
+                      <i class="icon fs-1 ic-tools-2"></i>
+                    </div>
+                  </div>
+                  <div class="col-12 p-3 content-details hidden">
+                    <div>
+                      <p><strong>C#</strong></p>
+                      <span class="range"></span>
+                      <span class="range"></span>
+                      <span class="range"></span>
+                    </div>
+                    <div>
+                      <p><strong>Python</strong></p>
+                      <span class="range"></span>
+                      <span class="range"></span>
+                      <span class="range" style="background-color: gray"></span>
+                    </div>
+                    <div>
+                      <p><strong>Java</strong></p>
+                      <span class="range"></span>
+                      <span class="range"></span>
+                      <span class="range" style="background-color: gray"></span>
+                    </div>
+                    <div>
+                      <p><strong>Tableau</strong></p>
+                      <span class="range"></span>
+                      <span class="range"></span>
+                      <span class="range" style="background-color: gray"></span>
+                    </div>
+                  </div>
+                  <div class="control-view">
+                    <button
+                      class="btn btn-warning viewMore hidden"
+                      type="button"
+                      onclick="handleViewMore(this)"
+                    >
+                      View more
+                    </button>
+                    <!--Tạo 1 button ẩn Không có mục đích gì, chỉ tạo để tránh trường hợp bị thu nhỏ card khi ẩn viewmore button-->
+                    <button class="viewLess"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Phần 3 Chứng chỉ-->
+    <section id="certificate" class="bg-grey">
+      <div class="container my-4">
+        <h1 class="section-title py-4">Chứng chỉ</h1>
+        <!-- set layout dòng 1 -->
+        <div class="row">
+          <!-- layout dòng 1 cột-->
+          <div class="col-md-6 cer-content cer-content1">
+            <div class="row">
+              <div class="col-lg-4 col-md-12">
+                <img
+                  class="img-cc w-100"
+                  src="./images/Cert_DBI.png"
+                  alt="cert"
+                />
+              </div>
+              <div class="fs-8 mt-3 mt-lg-0 col-lg-8 col-md-12">
+                <h5 class="pb-2 cer-title">chứng chỉ lập trình web-funix</h5>
+                <p>- Chứng chỉ thuộc chương trình CCDN</p>
+                <p>- GPA: 8.0</p>
+              </div>
+            </div>
+          </div>
+          <!-- layout dòng 1 ảnh 2 -->
+          <div class="col-md-6 cer-content cer-content2">
+            <div class="row">
+              <div class="col-lg-4 col-md-12">
+                <img
+                  class="img-cc w-100"
+                  src="./images/Cert_PRF.png"
+                  alt="cert"
+                />
+              </div>
+              <div class="fs-8 mt-3 mt-lg-0 col-lg-8 col-md-12">
+                <h5 class="pb-2 cer-title">
+                  Chứng chỉ lập trình javascript-funix
+                </h5>
+                <p>- Chứng chỉ thuộc chương trình CCDN</p>
+                <p>- GPA: 7.1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- set layout dòng 2 -->
+        <div class="row mt-5 pb-5 cer-border">
+          <!-- set layout dòng 2 ảnh 3 -->
+          <div class="col-md-6 pt-5 cer-content cer-content3">
+            <div class="row">
+              <div class="col-lg-4 col-md-12">
+                <img
+                  class="img-cc w-100"
+                  src="./images/Cert_WEB.png"
+                  alt="cert"
+                />
+              </div>
+              <div class="fs-8 mt-3 mt-lg-0 col-lg-8 col-md-12">
+                <h5 class="pb-2 cer-title">
+                  Chứng chỉ thiết kế database-funix
+                </h5>
+                <p>- Chứng chỉ thuộc chương trình CCDN</p>
+                <p>- GPA: 9.0</p>
+              </div>
+            </div>
+          </div>
+          <!-- tạo div rỗng set layout dòng 2 -->
+          <div class="col-md-6"></div>
+        </div>
+      </div>
+    </section>
+
+    <!--Dự án-->
+
+    <section id="project">
+      <div class="container my-4">
+        <h1 class="section-title py-4">Dự án</h1>
+        <div class="row">
+          <!--Dự án 1-->
+          <div class="col-md-4 d-flex pro-info">
+            <div class="new-project">
+              <img
+                src="images/project_1.png"
+                alt="project_1"
+                class="img-projects"
+              />
+              <div class="prj-name">
+                <a href="./digital-cv.html?project-1" aria-current="page"
+                  >Báo cáo kinh doanh</a
+                >
+              </div>
+              <div class="row p-3 when_where">
+                <div class="col-12 col-md-4 col-lg-3">
+                  <span class="prj-year">2022</span>
+                </div>
+                <div class="col-12 col-md-8 d-lg-flex">
+                  <div class="d-flex pe-2">
+                    <i class="where icon-user"></i><span>Funix</span>
+                  </div>
+                  <div class="d-flex">
+                    <i class="position icon-lamp"></i>
+                    <span>Developer</span>
+                  </div>
+                </div>
+              </div>
+              <table class="prj-details">
+                <tr>
+                  <th>Mô tả</th>
+                  <td>
+                    Ứng dụng trực quan hóa số liệu kinh doanh. Ứng dụng tự động
+                    lấy các số liệu kinh doanh từ hệ thống, sau đó phân tích số
+                    liệu, trực quan hóa số liệu để đưa lên dashboard dễ dàng
+                    điều hành việc kinh doanh.
+                  </td>
+                </tr>
+                <tr>
+                  <th>Nhiệm vụ</th>
+                  <td>Phát triển, tối ưu code và xử lý lỗi.</td>
+                </tr>
+                <tr>
+                  <th>Công nghệ</th>
+                  <td>HTML, CSS, Java Script, Python, Database, Tableau.</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <!--Dự án 2-->
+          <div class="col-md-4 d-flex pro-info">
+            <div class="new-project">
+              <img
+                src="images/project_2.png"
+                alt="project_2"
+                class="img-projects"
+              />
+              <div class="prj-name">
+                <a href="./digital-cv.html?project-2" aria-current="page"
+                  >Giám sát mạng di động</a
+                >
+              </div>
+              <div class="row p-3 when_where">
+                <div class="col-12 col-md-4 col-lg-3">
+                  <span class="prj-year">2020</span>
+                </div>
+                <div class="col-12 col-md-8 d-lg-flex">
+                  <div class="d-flex pe-2">
+                    <i class="where icon-user"></i><span>Funix</span>
+                  </div>
+                  <div class="d-flex">
+                    <i class="position icon-lamp"></i><span>Developer</span>
+                  </div>
+                </div>
+              </div>
+              <table class="prj-details">
+                <tr>
+                  <th>Mô tả</th>
+                  <td>
+                    Phần mềm lấy raw data từ hệ thống OSS di động 2G, 3G, 4G.
+                    Combine, tính toán dữ liệu, sau đó ra ra cảnh báo với KPI
+                    đang suy giảm và cảnh báo, đồng thời đưa ra các hành động xử
+                    lý suy giảm KPI.
+                  </td>
+                </tr>
+                <tr>
+                  <th>Nhiệm vụ</th>
+                  <td>Phát triển, tối ưu code và xử lý lỗi.</td>
+                </tr>
+                <tr>
+                  <th>Công nghệ</th>
+                  <td>C#, Database</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <!--Dự án 3-->
+          <div class="col-md-4 d-flex pro-info">
+            <div class="new-project">
+              <img
+                src="images/project_3.png"
+                alt="project_3"
+                class="img-projects"
+              />
+              <div class="prj-name">
+                <a href="./digital-cv.html?project-3" aria-current="page"
+                  >Quy hoạch relation</a
+                >
+              </div>
+              <div class="row p-3 when_where">
+                <div class="col-12 col-md-4 col-lg-3">
+                  <span class="prj-year">2015</span>
+                </div>
+                <div class="col-12 col-md-8 d-lg-flex">
+                  <div class="d-flex pe-2">
+                    <i class="where icon-user"></i><span>Funix</span>
+                  </div>
+                  <div class="d-flex">
+                    <i class="position icon-lamp"></i><span>Developer</span>
+                  </div>
+                </div>
+              </div>
+              <table class="prj-details">
+                <tr>
+                  <th>Mô tả</th>
+                  <td>
+                    Tool thực hiện plan quan hệ Neighbor giữa các trạm BTS di
+                    động dựa trên tọa độ, độ cao, hướng. Kiểm tra quan hệ
+                    Neighbor được khai báo trên hệ thống, đưa ra hành động thêm
+                    (nếu thiếu) và xóa (nếu không có).
+                  </td>
+                </tr>
+                <tr>
+                  <th>Nhiệm vụ</th>
+                  <td>Phát triển, tối ưu code và xử lý lỗi.</td>
+                </tr>
+                <tr>
+                  <th>Công nghệ</th>
+                  <td>C#, Database</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Phần footer-->
+    <section id="footer" class="bg-grey">
+      <div class="container p-4 d-flex gap-3 justify-content-center">
+        <div>
+          <a href="#"
+            ><i class="icon-facebook-circled ic-style"></i>
+            <span>Facebook</span></a
+          >
+        </div>
+        <div>
+          <a href="#"
+            ><i class="icon-linkedin-circled ic-style"></i>
+            <span>Linkedin</span>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <i class="icon-github-circled ic-style"></i>
+            <span>Github</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--JavaScript Bunder with Popper-->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
